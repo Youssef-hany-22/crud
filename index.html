@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="w-75 m-auto mt-5" >
+    <label for="name" class="fs-2">name</label>
+    <input type="text" id="name" class="form-control " placeholder="name of object "  onkeyup="valid()" >
+    <label for="price" class="fs-2">price</label>
+    <input type="number" id="price" class="form-control" placeholder="price of object " >
+    <label for="category" class="fs-2">category</label>
+    <input type="text" id="category" class="form-control" placeholder="category of object " >
+    <label for="desc" class="fs-2">description</label>
+    <input type="text" id="desc" class="form-control" placeholder="desc of object " >
+<BUtton onclick="addProducts()" id="btn1" class="btn btn-outline-primary btn-lg mt-4">ADD</BUtton> 
+<BUtton  id="btn2" onclick="updateProduct(updateIndex)" class="btn btn-outline-success btn-lg mt-4 d-none">update</BUtton> 
+
+<input type="text" class="form-control mt-5" placeholder="search" onkeyup="searchProduct (this.value)">
+
+<table class="table mt-5 text-center fs-5" >
+<thead>
+<tr>
+    <th>index </th>
+    <th>name</th>
+    <th>price </th>
+    <th>category </th>
+    <th>description</th>
+    <th> <span class="text-success">update</span> </th>
+    <th> <span class="text-danger" >delete</span></th>
+</tr>
+
+
+</thead>
+<tbody id="tr">
+
+
+
+
+
+</tbody>
+
+
+
+</table>
+
+
+</div>  
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
